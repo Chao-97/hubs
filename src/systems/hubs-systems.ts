@@ -68,6 +68,7 @@ import { uvScrollSystem } from "../bit-systems/uv-scroll";
 import { simpleWaterSystem } from "../bit-systems/simple-water";
 import { pdfSystem } from "../bit-systems/pdf-system";
 import { particleEmitterSystem } from "../bit-systems/particle-emitter";
+import { textSystem } from "../bit-systems/text";
 
 declare global {
   interface Window {
@@ -245,7 +246,8 @@ export function mainTick(xrFrame: XRFrame, renderer: WebGLRenderer, scene: Scene
   hubsSystems.gainSystem.tick();
   hubsSystems.nameTagSystem.tick();
   simpleWaterSystem(world);
-
+  textSystem(world);
+  
   videoTextureSystem(world);
 
   deleteEntitySystem(world, aframeSystems.userinput);
