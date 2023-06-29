@@ -105,7 +105,7 @@ async function refreshDirectReticulumHostAndPort() {
   host = host || configs.RETICULUM_SOCKET_SERVER || reticulumMeta.phx_host;
   const port =
     qs.get("phx_port") ||
-    (hasReticulumServer() ? new URL(`${document.location.protocol}//${configs.RETICULUM_SERVER}`).port : "4000");
+    (hasReticulumServer() ? new URL(`${document.location.protocol}//${configs.RETICULUM_SERVER}`).port : "443");
   directReticulumHostAndPort = { host, port };
 }
 

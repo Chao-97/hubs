@@ -250,7 +250,7 @@ module.exports = async (env, argv) => {
     }
 
     if (env.localDev) {
-      const localDevHost = "hubs.local";
+      const localDevHost = "hubs.lookfoto.cc";
       // Local Dev Environment (npm run local)
       Object.assign(process.env, {
         HOST: localDevHost,
@@ -258,10 +258,13 @@ module.exports = async (env, argv) => {
         CORS_PROXY_SERVER: "hubs-proxy.local:4000",
         NON_CORS_PROXY_DOMAINS: `${localDevHost},dev.reticulum.io`,
         BASE_ASSETS_PATH: `https://${localDevHost}:8080/`,
-        RETICULUM_SERVER: `${localDevHost}:4000`,
+        // RETICULUM_SERVER: `${localDevHost}:4000`,
+        RETICULUM_SERVER: `${localDevHost}`,
         POSTGREST_SERVER: "",
         ITA_SERVER: "",
-        UPLOADS_HOST: `https://${localDevHost}:4000`
+        // UPLOADS_HOST: `https://${localDevHost}:4000`
+        UPLOADS_HOST: `https://${localDevHost}`
+
       });
     }
   }
