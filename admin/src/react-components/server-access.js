@@ -35,45 +35,46 @@ class ServerAccessComponent extends Component {
         <Title title="Server Access" />
         <CardContent className={this.props.classes.info}>
           <Typography variant="body2" gutterBottom>
-            Hubs Cloud sets up your servers with SSH access and Two-Factor Authentication.
+          集散云通过SSH访问和双因素身份验证设置服务器。
           </Typography>
           <Typography variant="subheading" className={this.props.classes.section} gutterBottom>
-            Connecting to Servers
+          连接到服务器
           </Typography>
           <Typography variant="body1" gutterBottom>
-            To SSH into your server(s), you will use the SSH private key file you created before deploying Hubs Cloud.
+          要SSH到你的服务器，你需要使用在部署Hubs Cloud之前创建的SSH私钥文件。
           </Typography>
           {this.state.provider !== "arbortect" && (
             <Typography variant="body1" gutterBottom>
-              Each of your servers has a name. The name can be found in your cloud provider&apos;s console in the server
-              list. (For example, on AWS Console, go to EC2 -&gt; Instances.)
+            每个服务器都有一个名称。该名称可以在您的云提供商中找到&apos; 服务器端的控制台
+列表。 (例如，在AWS控制台中，转到EC2 -&gt;)
             </Typography>
           )}
           <Typography variant="body1" gutterBottom component="div">
-            To connect to a server, run the following command:
+          要连接到服务器，运行以下命令:
             {this.state.provider === "arbortect" && (
-              <div className={this.props.classes.command}>ssh -i &lt;key file&gt; root@{this.state.serverDomain}</div>
+              <div className={this.props.classes.command}>ssh -i &lt;关键文件&gt; root@{this.state.serverDomain}</div>
             )}
             {this.state.provider === "aws" && (
               <div className={this.props.classes.command}>
-                ssh -i &lt;key file&gt; ubuntu@&lt;server name&gt;.{this.state.serverDomain}
+                ssh -i &lt;关键文件&gt; ubuntu@&lt;服务器名称&gt;.{this.state.serverDomain}
               </div>
             )}
           </Typography>
           {this.state.qrCodeData && (
             <div>
               <Typography variant="subheading" className={this.props.classes.section} gutterBottom>
-                Two-Factor Verification
+              双因素认证
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Upon connecting, if 2FA has been configured on your servers you&apos;ll need a one-time Verification
-                Code. This is a two-factor security measure and is a rotating six digit number.
+              在连接时，如果您的服务器上已经配置了2FA，那么您将需要一次验证
+
+代码。这是一个两方面的安全措施，并且是一个旋转的六位数。
               </Typography>
               <Typography variant="body1" gutterBottom>
-                First, you will need to set up a device by installing a two-factor app such as Google Authenticator.
+              首先，您需要通过安装一个双重因素应用程序(如谷歌Authenticator)来设置设备。
               </Typography>
               <Typography variant="body1" gutterBottom>
-                To generate a code, open the authenticator app and scan the QR code below.
+              要生成代码，请打开authenticator应用程序并扫描下面的二维码。
               </Typography>
               {this.state.showQrCode ? (
                 <img style={{ width: "256px", height: "256px" }} src={this.state.qrCodeData} />
@@ -83,22 +84,22 @@ class ServerAccessComponent extends Component {
                   variant="outlined"
                   onClick={() => this.setState({ showQrCode: true })}
                 >
-                  Show QR Code
+                 显示二维码
                 </Button>
               )}
             </div>
           )}
           <Typography variant="subheading" className={this.props.classes.section} gutterBottom>
-            More Information
+          更多信息
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Documentation about server setup and tips for common tasks can be found in the{" "}
+          关于服务器设置的文档和常见任务的提示可以在{" "}
             <a
               href="https://hubs.mozilla.com/docs/hubs-cloud-accessing-servers.html"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Server Guide
+              务器向导
             </a>
             .
           </Typography>

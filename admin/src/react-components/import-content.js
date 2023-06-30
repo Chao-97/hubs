@@ -305,9 +305,9 @@ class ImportContentComponent extends Component {
           icon = <Done />;
           status = (
             <p>
-              Import Successful.
+           导入成功。
               <br />
-              Go to <a href={`/admin?#/${listingType}`}>approved {r.type}</a> to manage.
+              去 <a href={`/admin?#/${listingType}`}>通过 {r.type}</a> 经营
             </p>
           );
           break;
@@ -315,9 +315,9 @@ class ImportContentComponent extends Component {
           icon = <Done />;
           status = (
             <p>
-              Update Successful.
+            更新成功。
               <br />
-              Go to <a href={`/admin?#/${listingType}`}>approved {r.type}</a> to manage.
+              去 <a href={`/admin?#/${listingType}`}>通过 {r.type}</a> 经营
             </p>
           );
           break;
@@ -440,16 +440,16 @@ class ImportContentComponent extends Component {
         <Title title="Import Content" />
         <CardContent className={this.props.classes.info}>
           <Typography variant="body2" gutterBottom>
-            You can import avatars and scenes from any other Hubs Cloud site, such as{" "}
+          您可以从任何其他hub云站点导入头像和场景，例如{" "}
             <a href="https://hubs.mozilla.com" target="_blank" rel="noopener noreferrer">
               hubs.mozilla.com
             </a>
             .<br />
-            Please ensure the content you import has a permissible license (such as{" "}
+            请确保您导入的内容有许可(例如{" "}
             <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener noreferrer" target="_blank">
               CC-BY
             </a>
-            ) or is licensed to you for redistribution.
+            ) 或者授权给你重新分配。
           </Typography>
           <Button
             className={this.props.classes.button}
@@ -458,15 +458,15 @@ class ImportContentComponent extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Find Avatars &amp; Scenes
+            找到 替身 &amp; 场景
           </Button>
           <Typography variant="subheading" gutterBottom className={this.props.classes.section}>
-            Importing Content
+          导入的内容
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Enter a comma-separted list of URLs avatars or scenes to import them into your Hubs Cloud instance.
+          输入逗号分隔的url、头像或场景列表，将它们导入到hub云实例中。
             <br />
-            Or, specify a .pack file which contains a list of URLs, one per line.
+            或者，指定一个.pack文件，其中包含一个url列表，每行一个.
           </Typography>
           {(needsBaseAvatar || needsDefaultAvatar || needsDefaultScene) && (
             <List>
@@ -539,7 +539,7 @@ class ImportContentComponent extends Component {
             <div>
               <p />
               <Typography variant="subheading" gutterBottom>
-                Next, choose the content you&apos;d like to import, and which content flags to set. Then, click Import.
+              接下来，选择要导入的内容，以及要设置的内容标志。单击“导入”。
               </Typography>
             </div>
           )}
@@ -568,7 +568,7 @@ class ImportContentComponent extends Component {
               message={
                 <span id="import-snackbar" className={this.props.classes.message}>
                   <Icon className={clsx(this.props.classes.icon, this.props.classes.iconVariant)} />
-                  Failed to load specified URLs.
+                  加载指定url失败。
                 </span>
               }
               action={[

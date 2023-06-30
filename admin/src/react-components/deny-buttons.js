@@ -18,7 +18,7 @@ class DenyButton extends Component {
 
     return (
       <Button label="Deny" onClick={this.handleClick}>
-        Deny
+        拒绝
       </Button>
     );
   }
