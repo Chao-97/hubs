@@ -9,14 +9,14 @@ export default {
   }
 };
 
-export const Base = () => <RoomLayout viewport={<EnterOnDeviceModal shortUrl="hub.link" code="IDEB" />} />;
+export const Base = () => <RoomLayout viewport={<EnterOnDeviceModal shortUrl="hubs.lookfoto.cc" code="IDEB" />} />;
 
 export const HeadsetConnected = () => (
-  <RoomLayout viewport={<EnterOnDeviceModal shortUrl="hub.link" code="IDEB" headsetConnected />} />
+  <RoomLayout viewport={<EnterOnDeviceModal shortUrl="hubs.lookfoto.cc" code="IDEB" headsetConnected />} />
 );
 
 export const VrNotSupported = () => (
-  <RoomLayout viewport={<EnterOnDeviceModal unsupportedBrowser shortUrl="hub.link" code="IDEB" headsetConnected />} />
+  <RoomLayout viewport={<EnterOnDeviceModal unsupportedBrowser shortUrl="hubs.lookfoto.cc" code="IDEB" headsetConnected />} />
 );
 
 export const LoadingCode = () => <RoomLayout viewport={<EnterOnDeviceModal loadingCode />} />;

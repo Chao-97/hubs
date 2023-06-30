@@ -1,5 +1,5 @@
 [general]
-shortlink_domain = "hub.link"
+shortlink_domain = "hubs.lookfoto.cc"
 reticulum_server = "dev.reticulum.io"
 cors_proxy_server = "cors-proxy-dev.reticulum.io"
 thumbnail_server = "nearspark-dev.reticulum.io"
