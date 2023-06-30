@@ -9,7 +9,7 @@ import { Container } from "./Container";
 import { SocialBar } from "../home/SocialBar";
 import { SignInButton } from "../home/SignInButton";
 import { AppLogo } from "../misc/AppLogo";
-
+import { LanguageButton } from "../home/LanguageButton";
 export function Header({
   showCloud,
   enableSpoke,
@@ -88,6 +88,9 @@ export function Header({
                 </a>
               </li>
             )}
+            <li>
+                <LanguageButton/>
+            </li>
           </ul>
         </nav>
         <div className={styles.signIn}>

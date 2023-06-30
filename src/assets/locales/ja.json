@@ -241,6 +241,7 @@
   "invite-popover.embed-code": "埋め込みコード",
   "invite-popover.room-link": "ルームリンク",
   "invite-popover.title": "招待",
+  "language": "言語",
   "leave-room-modal.create-room.confirm": "退室および新規ルーム生成",
   "leave-room-modal.create-room.message": "新しいルームを作成し、このルームが残ります。よろしいですか？",
   "leave-room-modal.join-room.confirm": "入室",

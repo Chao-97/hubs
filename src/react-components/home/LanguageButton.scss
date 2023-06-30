@@ -1,0 +1,53 @@
+@use "../styles/theme.scss";
+
+// :local(.language) {
+//   width: 20px;
+// }
+
+:local(.dropdown) {
+  float: left;
+  overflow: hidden;
+}
+
+:local(.dropdown .dropbtn) {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+:local(a:hover .dropdown:hover .dropbtn),
+:local(.dropbtn:focus) {
+  background-color: rgb(255, 255, 255);
+}
+
+:local(.dropdowncontent) {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(247, 245, 245, 0.2);
+  z-index: 1;
+}
+
+:local(.dropdowncontent a) {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+:local(.dropdowncontent a:hover) {
+  background-color: #fff;
+}
+
+:local(.show) {
+  display: block;
+}
