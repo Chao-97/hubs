@@ -23,10 +23,10 @@ export const UnauthorizedPage = () => (
         }}
       >
         {/* eslint-disable-next-line @calm/react-intl/missing-formatted-message */}
-        <Typography variant="title">Sorry! Your account is not an admin.</Typography>
+        <Typography variant="title">对不起!您的帐户不是管理员。</Typography>
         {/* eslint-disable-next-line @calm/react-intl/missing-formatted-message */}
         <Button variant="contained" style={{ marginTop: "40px" }} color="secondary" href="/">
-          Return Home
+         返回主页
         </Button>
       </CardContent>
     </Card>

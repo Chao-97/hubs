@@ -90,7 +90,7 @@ export function OwnedFileDownloadField({ getFileName, ...props }) {
     <ConditionalReferenceField
       reference="owned_files"
       linkType={false}
-      defaultValue={<a href="#">Download</a>}
+      defaultValue={<a href="#">下载</a>}
       {...props}
     >
       <OwnedFileDownloadFieldInternal source="owned_file_uuid" fileName={fileName} />
@@ -179,13 +179,13 @@ AvatarLink.propTypes = {
 
 export const IdentityEditLink = withStyles(styles)(({ record = {}, classes }) => (
   <a href={`#/identities/${record.id}`} className={classes.fieldLink}>
-    Edit Identity
+   编辑身份
   </a>
 ));
 
 export const IdentityCreateLink = withStyles(styles)(({ record, classes }) => (
   <a href={`#/identities/create?account_id=${record.id}`} className={classes.fieldLink}>
-    Create Identity
+    创建身份
   </a>
 ));
 

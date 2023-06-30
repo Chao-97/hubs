@@ -86,11 +86,11 @@ const SystemEditorComponent = ({ classes }) => {
   return (
     <div className="page_wrapper">
       <Card className="mb-24">
-        <h2 className="heading-lg mb-24">Getting Started</h2>
+        <h2 className="heading-lg mb-24">开始入门</h2>
 
         {/* AVATARS / SCENES  */}
         <div className="mb-40">
-          <h3 className="heading-sm mb-28">Add avatars and scenes</h3>
+          <h3 className="heading-sm mb-28">添加头像和场景</h3>
 
           <CardSection
             className="mb-20"
@@ -106,7 +106,7 @@ const SystemEditorComponent = ({ classes }) => {
 
         {/* CUSTOMIZE HUB */}
         <section className="mb-40">
-          <h3 className="heading-sm mb-28">Customize the look of your hub</h3>
+          <h3 className="heading-sm mb-28">自定义中心外观</h3>
 
           {hasPaidFeature() && !isBrandingDisabled() && (
             <CardSection
@@ -132,7 +132,7 @@ const SystemEditorComponent = ({ classes }) => {
 
         {/* CHANGE ROOM */}
         <section className="mb-40">
-          <h3 className="heading-sm mb-28">Change room settings</h3>
+          <h3 className="heading-sm mb-28">更衣室设置</h3>
 
           <CardSection
             className="mb-20"
@@ -146,7 +146,7 @@ const SystemEditorComponent = ({ classes }) => {
 
         {/* CHANGE ROOM */}
         <section className="">
-          <h3 className="heading-sm">Limit who can access your hub</h3>
+          <h3 className="heading-sm">限制谁可以访问你的中心</h3>
 
           <CardSection
             ctaCallback={() => {
@@ -169,13 +169,13 @@ const SystemEditorComponent = ({ classes }) => {
               </div>
               <div className="flex-box">
                 <div className="body-md">
-                  Your AWS account is in the{" "}
+                您的AWS账户在{" "}
                   <a
                     href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    AWS Simple Email Service Sandbox.
+                    AWS简单电子邮件服务沙盒。
                   </a>{" "}
                   Follow instructions in{" "}
                   <a
@@ -191,20 +191,20 @@ const SystemEditorComponent = ({ classes }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Using an Existing Email Provider
+                   使用现有的电子邮件提供商
                   </a>
                 </div>
                 <div className="body-sm">
-                  Users will not be able to log in until the system can send email. You&apos;ll need to either{" "}
+                用户将无法登录，直到系统可以发送电子邮件. 你&apos;ll 需要任何一个{" "}
                   <a
                     href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    follow the instructions
+                   遵循指示
                   </a>{" "}
-                  to request a limit increase, or set custom email settings in{" "}
-                  <a href="/admin#/server-setup">Server Settings</a>
+                  请求增加限制，或在中设置自定义电子邮件设置{" "}
+                  <a href="/admin#/server-setup">服务器设置</a>
                 </div>
               </div>
             </div>
@@ -215,10 +215,10 @@ const SystemEditorComponent = ({ classes }) => {
                 <Icon name="alert-triangle" />
               </div>
               <div className="flex-box">
-                <div className="body-md">You have exceeded your specified storage limit.</div>
+                <div className="body-md">您已超过指定的存储限制</div>
                 <div className="body-sm">
-                  Visitors will not be able to upload new scenes, avatars, or files until you increase the &apos;Storage
-                  Limit&apos; in your stack settings.
+                访问者将不能上传新的场景、头像或文件，直到你增加 &apos;存储
+                  限制&apos; 在你的堆栈设置中。
                 </div>
               </div>
             </div>
@@ -229,8 +229,8 @@ const SystemEditorComponent = ({ classes }) => {
                 <Icon name="alert-triangle" />
               </div>
               <div className="flex-box">
-                <div className="body-md">Your system has no avatars.</div>
-                <div className="body-sm">Choose 'Import Content' on the left to load avatars.</div>
+                <div className="body-md">您的系统没有头像.</div>
+                <div className="body-sm">选择左侧的` Import Content `来加载头像。</div>
               </div>
             </div>
           )}
@@ -240,8 +240,8 @@ const SystemEditorComponent = ({ classes }) => {
                 <Icon name="alert-triangle" />
               </div>
               <div className="flex-box">
-                <div className="body-md">Your system has no scenes.</div>
-                <div className="body-sm">Choose 'Import Content' on the left to load scenes.</div>
+                <div className="body-md">你的系统没有场景。</div>
+                <div className="body-sm">选择左侧的` Import Content `来加载场景。</div>
               </div>
             </div>
           )}
@@ -257,8 +257,8 @@ const SystemEditorComponent = ({ classes }) => {
                     : "You are using your cloud provider to serve content."}
                 </div>
                 <div className="body-sm">
-                  You can reduce costs and improve performance by using Cloudflare's CDN to serve content. Choose
-                  'Content CDN' on the left for more info.
+                你可以通过使用Cloudflare的CDN来提供内容服务，从而降低成本并提高性能。选择
+                左边的` Content CDN `可以查看更多信息。
                 </div>
               </div>
             </div>
@@ -267,7 +267,7 @@ const SystemEditorComponent = ({ classes }) => {
       )}
 
       <Card>
-        <h2 className="heading-lg mb-24">Getting Help</h2>
+        <h2 className="heading-lg mb-24">寻求帮助</h2>
         <div className="flex-align-items-center mb-20">
           <div className="mr-20">
             <DiscordIcon />
@@ -275,9 +275,9 @@ const SystemEditorComponent = ({ classes }) => {
           <p className="body-md">
             The{" "}
             <a className="link" rel="noopener noreferrer" href="https://discord.com/invite/sBMqSjCndj" target="_blank">
-              Hubs Discord Community
+            Hubs Discord社区
             </a>{" "}
-            is built by Hubs users and administrators, just like you.
+            是由hub您、用户和管理员构建的
           </p>
         </div>
 
@@ -293,9 +293,9 @@ const SystemEditorComponent = ({ classes }) => {
               rel="noopener noreferrer"
               className="link"
             >
-              Hubs Documentation
+              Hubs 文档
             </a>{" "}
-            contains a Getting Started guide and other resources.
+            包含入门指南和其他资源
           </p>
         </div>
 
@@ -311,9 +311,9 @@ const SystemEditorComponent = ({ classes }) => {
               rel="noopener noreferrer"
               className="link"
             >
-              Mozilla Support
+              Mozilla 支持
             </a>{" "}
-            to seek help with Hubs subscriptions.
+            以寻求有关Hubs订阅的帮助。
           </p>
         </div>
 
@@ -322,27 +322,27 @@ const SystemEditorComponent = ({ classes }) => {
             <GithubIcon />
           </div>
           <p className="body-md">
-            You can{" "}
+            你可以{" "}
             <a
               rel="noopener noreferrer"
               href="https://github.com/mozilla/hubs/discussions"
               target="_blank"
               className="link"
             >
-              ask questions
+              向他人寻求信息或解答的行为。
             </a>{" "}
-            or{" "}
+            或者{" "}
             <a className="link" href="https://github.com/mozilla/hubs" target="_blank" rel="noopener noreferrer">
-              file an issue
+            提出一个问题
             </a>{" "}
-            on GitHub.
+            在 GitHub.
           </p>
         </div>
       </Card>
 
       <div className="flex-align-items-center ml-12">
         <a href="https://hubs.mozilla.com/whats-new" target="_blank" rel="noopener noreferrer" className="link mr-24">
-          What's new
+        最新动态
         </a>
         {!configs.IS_LOCAL_OR_CUSTOM_CLIENT && (
           <p className="body-md">{`Hubs version: ${process.env.BUILD_VERSION || "?"}`}</p>
@@ -351,10 +351,10 @@ const SystemEditorComponent = ({ classes }) => {
 
       {configs.IS_LOCAL_OR_CUSTOM_CLIENT && (
         <div className="body-md mt-12 ml-12">
-          <p>App client: Custom client</p>
+          <p>App客户端:自定义客户端</p>
           <p>{`Undeploy custom client to run build ${process.env.BUILD_VERSION || "?"}`}</p>
           <p>
-            Remember to regularly pull in upstream changes from the "hubs-cloud" branch:{" "}
+          记得定期从“hubs-cloud”分支拉入上游变更:{" "}
             <a href="https://github.com/mozilla/hubs" target="_blank" rel="noopener noreferrer" className="link">
               Github
             </a>
