@@ -15,6 +15,6 @@ export const AVAILABLE_LOCALES = {
 // Map from alternative primary language tags to those we support
 export const FALLBACK_LOCALES = {
   jp: "ja",
-  zh:"zh-CN"
+  zh:"zh-cn"
 };
 
