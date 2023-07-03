@@ -60,18 +60,18 @@ export const AccountEditToolbar = withStyles(accountEditToolbarStyles)(props => 
                 case Confirming:
                   return (
                     <>
-                      Are you sure you want to delete account {props.id}?<br />
+                    您确定要删除帐户吗 {props.id}?<br />
                       <br />
-                      <b>WARNING!</b> This account will be permanently deleted, including all its scenes, assets,
-                      avatars, rooms and files. <b>This cannot be undone.</b>
+                      <b>警告!</b> 这个账户将被永久删除，包括它的所有场景，资产，
+                      化身，房间和文件。 <b>这是无法挽回的。</b>
                     </>
                   );
                 case Deleting:
-                  return <>Deleting account {props.id}...</>;
+                  return <>删除账户 {props.id}...</>;
                 case Succeeded:
-                  return <>Successfully deleted account {props.id}.</>;
+                  return <>成功删除帐户 {props.id}.</>;
                 case Failed:
-                  return <>Failed to delete account {props.id}.</>;
+                  return <>删除帐户失败 {props.id}.</>;
               }
             })()}
           </DialogContentText>
@@ -88,17 +88,17 @@ export const AccountEditToolbar = withStyles(accountEditToolbarStyles)(props => 
                 }
               }}
             >
-              Okay
+              好的
             </Button>
           )}
 
           {deleteState === Confirming && (
             <>
               <Button variant="outlined" onClick={onDeleteAccount}>
-                Yes, permanently delete this account
+              是的，永久删除这个帐户
               </Button>
               <Button variant="outlined" onClick={() => setOpenConfirmationDialog(false)}>
-                Cancel
+               取消
               </Button>
             </>
           )}

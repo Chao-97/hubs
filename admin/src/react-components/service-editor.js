@@ -317,7 +317,7 @@ class ConfigurationEditor extends Component {
               }}
             >
               <RefreshIcon />
-              Revert to original theme data
+              恢复到原始主题数据
             </Button>
           </div>
         )}
@@ -346,7 +346,7 @@ class ConfigurationEditor extends Component {
           {imageURL && <img className="image" src={imageURL} />}
           <input type="file" onChange={ev => this.onChange(path, ev.target.files[0])} style={{ display: "none" }} />
           <Button variant="outlined" color="secondary" size="small" onClick={e => e.target.parentNode.click()}>
-            Upload
+          上传
           </Button>
         </label>
         <span className={this.props.classes.inputDescription}>{descriptor.description}</span>
@@ -431,13 +431,13 @@ class ConfigurationEditor extends Component {
 
     return (
       <form onSubmit={this.onSubmit.bind(this)}>
-        <h3 className="heading-sm mb-24">Nametags</h3>
+        <h3 className="heading-sm mb-24">标签</h3>
         {getInput(configurables[0])}
         {getInput(configurables[1])}
-        <h3 className="heading-sm mb-24 mt-40">Theme Data</h3>
+        <h3 className="heading-sm mb-24 mt-40">主题数据</h3>
         <p className="body-md">
-          This section contains the code which generates the available themes a user can choose from when in your
-          hub&#39;s rooms (More &gt; Preferences &gt; Misc &gt; Theme).More information about customizing your hubs&#39;
+        本节包含生成可用主题的代码，用户可以在您的hub
+        &#39; 房间 (更多的 &gt; 偏好 &gt; 音乐 &gt; 主题).有关自定义您的 hubs&#39;
           themes can be found in our{" "}
           <a
             href="https://hubs.mozilla.com/docs/hubs-cloud-customizing-themes.html"
@@ -445,7 +445,8 @@ class ConfigurationEditor extends Component {
             rel="noopener noreferrer"
             className="link"
           >
-            documentation pages
+           文档页面
+
           </a>{" "}
           .
         </p>
@@ -460,7 +461,7 @@ class ConfigurationEditor extends Component {
               variant="contained"
               color="primary"
             >
-              Save
+              储存
             </Button>
           )}
         </div>
@@ -502,7 +503,7 @@ class ConfigurationEditor extends Component {
         {getInput(configurables[2])}
         <AdditionalInfo size="96px x 96px" format="JPG, GIF, PNG" />
 
-        <h3 className="heading-sm mb-24 mt-40">Hub Home Page</h3>
+        <h3 className="heading-sm mb-24 mt-40">Hub主页</h3>
 
         {/* HOMEPAGE IMAGE  */}
         {getInput(configurables[3])}
@@ -512,7 +513,7 @@ class ConfigurationEditor extends Component {
         {getInput(configurables[4])}
         <AdditionalInfo size="250px x 250px" format="JPG, GIF, PNG, SVG" />
 
-        <h3 className="heading-sm mb-24 mt-40">Sharing and Social Media</h3>
+        <h3 className="heading-sm mb-24 mt-40">分享和社交媒体</h3>
 
         {/* SHORTCUT ICON */}
         {getInput(configurables[5])}
@@ -531,7 +532,7 @@ class ConfigurationEditor extends Component {
               variant="contained"
               color="primary"
             >
-              Save
+             储存
             </Button>
           )}
         </div>
@@ -560,7 +561,7 @@ class ConfigurationEditor extends Component {
               variant="contained"
               color="primary"
             >
-              Save
+              储存
             </Button>
           )}
         </div>

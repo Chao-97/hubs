@@ -177,13 +177,13 @@ export const AccountList = withStyles(styles)(
             <Card className={classes.searchCard}>
               <CardContent>
                 <Typography component="h2">
-                  <b>Create one or multiple accounts with (optional) identities</b>
+                  <b>创建一个或多个具有(可选)身份的帐户</b>
                 </Typography>
                 <Typography component="h3">
-                  <i>Single example:</i> email1,identity1
+                  <i>单个例子:</i> email1,identity1
                 </Typography>
                 <Typography component="h3">
-                  <i>Multiple example:</i> email1,identity1;email2;email3,identity3 with spaces;email4
+                  <i>多个例子:</i> email1,identity1;email2;email3,identity3 with spaces;email4
                 </Typography>
                 <form onSubmit={this.onCreateAccount.bind(this)}>
                   <MuiTextField
@@ -218,7 +218,7 @@ export const AccountList = withStyles(styles)(
             </Card>
             <Card className={classes.searchCard}>
               <CardContent>
-                <Typography component="h2">Find an account with an email address</Typography>
+                <Typography component="h2">找一个有电子邮件地址的账户</Typography>
                 <form onSubmit={this.onAccountSearch.bind(this)}>
                   <MuiTextField
                     label="Account Email"

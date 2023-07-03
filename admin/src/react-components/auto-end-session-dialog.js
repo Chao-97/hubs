@@ -80,9 +80,9 @@ export const AutoEndSessionDialog = withStyles(styles)(
             </Typography>
           </DialogContent>
           {!this.state.sessionEnded ? (
-            <Button onClick={this.onCancel}>Cancel</Button>
+            <Button onClick={this.onCancel}>取消</Button>
           ) : (
-            <Button onClick={() => location.reload()}>Reload</Button>
+            <Button onClick={() => location.reload()}>重新加载</Button>
           )}
         </Dialog>
       );
