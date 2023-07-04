@@ -23,27 +23,27 @@ const setAuthToken = function (token) {
 function getCategoryDisplayName(category) {
   switch (category) {
     case "api_keys":
-      return "API Keys";
+      return "API 密钥";
     case "content":
-      return "Content";
+      return "内容";
     case "email":
-      return "Email";
+      return "邮件";
     case "advanced":
-      return "Advanced";
+      return "优先";
     case "translations":
-      return "Translations";
+      return "转化";
     case "features":
-      return "Features";
+      return "特点";
     case "rooms":
-      return "Rooms";
+      return "房间";
     case "images":
-      return "Images";
+      return "图像";
     case "theme":
-      return "Themes";
+      return "主题";
     case "links":
-      return "Links";
+      return "链接";
     case "auth":
-      return "Auth";
+      return "作者";
     default:
       return null;
   }
@@ -52,27 +52,27 @@ function getCategoryDisplayName(category) {
 function getCategoryDescription(category, provider) {
   switch (category) {
     case "api_keys":
-      return "API keys for 3rd party services, used in media search and telemetry.";
+      return "第三方服务的API密钥，用于媒体搜索和遥测。";
     case "content":
-      return "User-contributed content settings.";
+      return "用户贡献的内容设置。";
     case "email":
       if (provider === "arbortect") {
-        return "Custom SMTP email provider settings. Leave blank to use the SMTP settings you chose when configuring your server. Looking to customize magic link email? Go to App Settings > Auth";
+        return "自定义SMTP电子邮件提供商设置。留空以使用您在配置服务器时选择的SMTP设置。想要定制魔术链接电子邮件?进入App Settings > Auth";
       } else {
-        return "Custom SMTP email provider settings. Leave blank to use your cloud provider's email service. Looking to customize magic link email? Go to App Settings > Auth";
+        return "自定义SMTP电子邮件提供商设置。留空以使用云提供商的电子邮件服务。想要定制魔术链接电子邮件?进入App Settings > Auth";
       }
     case "advanced":
-      return "Advanced Settings for those who know what they're doing.";
+      return "高级设置给那些知道自己在做什么的人。";
     case "translations":
-      return "Text that you can change.";
+      return "可以更改的文本。";
     case "features":
-      return "Features that you can toggle.";
+      return "可以切换的功能。";
     case "colors":
-      return "Replace colors in the app.";
+      return "替换应用中的颜色。";
     case "links":
-      return "Replace links in the app.";
+      return "替换应用中的链接。";
     case "auth":
-      return "Customize login email options.";
+      return "自定义登录电子邮件选项。";
     default:
       return null;
   }
