@@ -40,7 +40,7 @@ const styles = {
 
 const AccountFilter = props => (
   <Filter {...props}>
-    <TextInput label="Search ID" source="_text_id" alwaysOn />
+    <TextInput label="查找 ID" source="_text_id" alwaysOn />
   </Filter>
 );
 
@@ -183,17 +183,17 @@ export const AccountList = withStyles(styles)(
                   <i>单个例子:</i> email1,identity1
                 </Typography>
                 <Typography component="h3">
-                  <i>多个例子:</i> email1,identity1;email2;email3,identity3 with spaces;email4
+                  <i>多个例子:</i> 邮件账户1,身份验证1;邮件账户2;邮件账户3,身份验证2 with spaces;邮件账户4
                 </Typography>
                 <form onSubmit={this.onCreateAccount.bind(this)}>
                   <MuiTextField
-                    label="Email, (optional) identity"
+                    label="邮件, (可选)的身份地位"
                     type="text"
                     style={{ minWidth: "300px" }}
                     required
                     onChange={e => this.setState({ batchCreate: e.target.value })}
                   />
-                  <Button onClick={this.onCreateAccount.bind(this)}>Create</Button>
+                  <Button onClick={this.onCreateAccount.bind(this)}>创建</Button>
                   {this.state.creating && <CircularProgress />}
                   <Snackbar open={this.state.createStatus} autoHideDuration={5000}>
                     <SnackbarContent message={this.state.createStatus}></SnackbarContent>
@@ -221,12 +221,12 @@ export const AccountList = withStyles(styles)(
                 <Typography component="h2">找一个有电子邮件地址的账户</Typography>
                 <form onSubmit={this.onAccountSearch.bind(this)}>
                   <MuiTextField
-                    label="Account Email"
+                    label="电子邮件账户"
                     type="email"
                     required
                     onChange={e => this.setState({ emailSearch: e.target.value })}
                   />
-                  <Button onClick={this.onAccountSearch.bind(this)}>Find</Button>
+                  <Button onClick={this.onAccountSearch.bind(this)}>查找</Button>
                   {this.state.searching && <CircularProgress />}
                   <Snackbar open={this.state.searchStatus} autoHideDuration={5000}>
                     <SnackbarContent message={this.state.searchStatus}></SnackbarContent>
@@ -236,10 +236,10 @@ export const AccountList = withStyles(styles)(
             </Card>
             <List {...other} filters={<AccountFilter />} bulkActionButtons={false}>
               <Datagrid>
-                <TextField source="id" />
-                <DateField source="inserted_at" />
-                <DateField source="updated_at" />
-                <ReferenceManyField label="Identity" target="_account_id" reference="identities">
+                <TextField source="id" label="ID"/>
+                <DateField source="注册时间" label="身份"/>
+                <DateField source="updated_at" label="更新时间"/>
+                <ReferenceManyField label="身份" target="_account_id" reference="identities">
                   <Datagrid classes={{ rowCell: classes.noBorder, thead: classes.hide }}>
                     <TextField source="name" />
                     <IdentityEditLink />
@@ -247,8 +247,8 @@ export const AccountList = withStyles(styles)(
                 </ReferenceManyField>
 
                 <IdentityCreateLink />
-                <BooleanField source="is_admin" />
-                <TextField source="state" />
+                <BooleanField source="is_admin" label="是否为管理"/>
+                <TextField source="state" label="状态"/>
                 <EditButton />
               </Datagrid>
             </List>
