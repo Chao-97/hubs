@@ -477,8 +477,8 @@ class ImportContentComponent extends Component {
                   </ListItemIcon>
                   <ListItemText
                     inset
-                    primary="You need to add a base avatar."
-                    secondary="Base avatars will be provided as choices when customizing avatars."
+                    primary="你需要添加一个基础头像。"
+                    secondary="自定义头像时将提供基础头像作为选择。"
                   />
                 </ListItem>
               )}
@@ -489,8 +489,8 @@ class ImportContentComponent extends Component {
                   </ListItemIcon>
                   <ListItemText
                     inset
-                    primary="You need to add at least one default avatar."
-                    secondary="New users will be assigned one of the default avatars."
+                    primary="您需要添加至少一个默认头像。"
+                    secondary="新用户将被分配一个默认头像。"
                   />
                 </ListItem>
               )}
@@ -501,8 +501,8 @@ class ImportContentComponent extends Component {
                   </ListItemIcon>
                   <ListItemText
                     inset
-                    primary="You need to add at least one default scene."
-                    secondary="New rooms will be assigned a default scene, which can be changed after room creation."
+                    primary="至少需要添加一个默认场景。"
+                    secondary="新房间将被分配一个默认场景，可以在房间创建后更改。"
                   />
                 </ListItem>
               )}
@@ -514,7 +514,7 @@ class ImportContentComponent extends Component {
                 <TextField
                   key="url"
                   id="url"
-                  label="Avatar or Scene URLs or .pack file"
+                  label="头像或场景url或.pack文件"
                   value={urls}
                   onChange={this.handleUrlChanged.bind(this)}
                   type="text"
@@ -530,7 +530,7 @@ class ImportContentComponent extends Component {
                 variant="contained"
                 color="primary"
               >
-                Preview Import
+               导入数据
               </Button>
             )}
           </form>

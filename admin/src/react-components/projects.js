@@ -15,7 +15,7 @@ import { OwnedFileDownloadField } from "./fields";
 
 const ProjectFilter = props => (
   <Filter {...props}>
-    <TextInput label="Search SID" source="project_sid" alwaysOn />
+    <TextInput label="搜索SID" source="project_sid" alwaysOn />
   </Filter>
 );
 

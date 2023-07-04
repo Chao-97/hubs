@@ -119,18 +119,18 @@ class AdminUI extends Component {
               logoutButton={() => <span />}
               theme={theme}
             >
-              <Resource name="pending_scenes" list={PendingSceneList} />
+              <Resource name="pending_scenes" list={PendingSceneList} options={{ label: "等待的场景" }}/>
               <Resource
                 name="scene_listings"
                 list={SceneListingList}
                 edit={SceneListingEdit}
-                options={{ label: "Approved scenes" }}
+                options={{ label: "批准的场景" }}
               />
               <Resource
                 name="featured_scene_listings"
                 list={FeaturedSceneListingList}
                 edit={FeaturedSceneListingEdit}
-                options={{ label: "Featured scenes" }}
+                options={{ label: "特色的场景" }}
               />
 
               <Resource name="pending_avatars" list={AvatarList} />
@@ -138,22 +138,22 @@ class AdminUI extends Component {
                 name="avatar_listings"
                 list={AvatarListingList}
                 edit={AvatarListingEdit}
-                options={{ label: "Approved avatars" }}
+                options={{ label: "已批准的头像" }}
               />
               <Resource
                 name="featured_avatar_listings"
                 list={AvatarListingList}
                 edit={AvatarListingEdit}
-                options={{ label: "Featured avatars" }}
+                options={{ label: "特色头像" }}
               />
 
-              <Resource name="accounts" list={AccountList} edit={AccountEdit} />
-              <Resource name="identities" list={IdentityList} create={IdentityCreate} edit={IdentityEdit} />
-              <Resource name="scenes" list={SceneList} edit={SceneEdit} />
-              <Resource name="avatars" list={AvatarList} edit={AvatarEdit} />
+              <Resource name="accounts" list={AccountList} edit={AccountEdit}    options={{ label: "账户" }} />
+              <Resource name="identities" list={IdentityList} create={IdentityCreate} edit={IdentityEdit}    options={{ label: "身份" }} />
+              <Resource name="scenes" list={SceneList} edit={SceneEdit}     options={{ label: "场景" }}/>
+              <Resource name="avatars" list={AvatarList} edit={AvatarEdit}     options={{ label: "头像" }}/>
               <Resource name="owned_files" />
 
-              <Resource name="projects" list={ProjectList} show={ProjectShow} />
+              <Resource name="projects" list={ProjectList} show={ProjectShow}  options={{ label: "项目" }}/>
             </Admin>
             {this.state.showAutoEndSessionDialog && (
               <AutoEndSessionDialog

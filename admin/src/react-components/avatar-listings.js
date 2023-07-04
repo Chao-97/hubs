@@ -23,8 +23,8 @@ import {
 
 const AvatarListingFilter = props => (
   <Filter {...props}>
-    <TextInput label="Search Name" source="name" alwaysOn />
-    <TextInput label="Search SID" source="avatar_listing_sid" alwaysOn />
+    <TextInput label="搜索名称" source="name" alwaysOn />
+    <TextInput label="搜索SID" source="avatar_listing_sid" alwaysOn />
   </Filter>
 );
 
