@@ -22,7 +22,7 @@ const styles = {
 
 const IdentityFilter = props => (
   <Filter {...props}>
-    <TextInput label="Search Identity" source="name" alwaysOn />
+    <TextInput label="搜索身份" source="name" alwaysOn />
   </Filter>
 );
 
@@ -32,7 +32,7 @@ export const IdentityList = withStyles(styles)(props => (
       <DateField source="inserted_at" />
       <DateField source="updated_at" />
       <TextField source="name" />
-      <ReferenceField label="Account" reference="accounts" source="account_id">
+      <ReferenceField label="账户" reference="accounts" source="account_id">
         <TextField source="id" />
       </ReferenceField>
       <EditButton />
@@ -43,7 +43,7 @@ export const IdentityList = withStyles(styles)(props => (
 export const IdentityEdit = props => (
   <Edit {...props}>
     <SimpleForm redirect={(path, id, data) => `/accounts/${data.account_id}`}>
-      <ReferenceField label="Identity for Account ID" reference="accounts" source="account_id" linkType={false}>
+      <ReferenceField label="账户ID标识" reference="accounts" source="account_id" linkType={false}>
         <TextField source="id" />
       </ReferenceField>
       <TextInput source="name" />
@@ -54,7 +54,7 @@ export const IdentityEdit = props => (
 export const IdentityCreate = props => (
   <Create {...props}>
     <SimpleForm redirect={(path, id, data) => `/accounts/${data.account_id}`}>
-      <ReferenceField label="Identity for Account ID" reference="accounts" source="account_id" linkType={false}>
+      <ReferenceField label="账户ID标识" reference="accounts" source="account_id" linkType={false}>
         <TextField source="id" />
       </ReferenceField>
       <TextInput source="name" />

@@ -98,9 +98,11 @@ const SystemEditorComponent = ({ classes }) => {
               window.open(`https://hubs.mozilla.com/docs/hubs-cloud-asset-packs.html`);
             }}
             cta="get more avatars and scenes"
-            body="Give your hub visitors more scenes to explore and a wider
-              selection of avatars to choose from. Install your new assets
-              on the Import Content page."
+            body="给您的枢纽游客更多的场景探索和更广泛
+
+            选择的化身选择。安装新资源
+            
+            在“导入内容”页面。"
           />
         </div>
 
@@ -114,8 +116,8 @@ const SystemEditorComponent = ({ classes }) => {
               ctaCallback={() => {
                 window.location.href = "#/brand";
               }}
-              cta="Add my Logo"
-              body="Apply your branding to the hub’s website and lobby."
+              cta="添加我的Logo"
+              body="将您的品牌应用于中心的网站和大堂。"
             />
           )}
 
@@ -124,9 +126,10 @@ const SystemEditorComponent = ({ classes }) => {
             ctaCallback={() => {
               window.location.href = "#/app-settings";
             }}
-            cta="Edit hub’s text and details"
-            body="Edit your hub’s name, description and other text content for
-                  improved search engines results."
+            cta="编辑中心的文本和详细信息"
+            body="编辑集线器的名称、描述和其他文本内容
+
+            改进搜索引擎的结果。"
           />
         </section>
 
@@ -139,8 +142,8 @@ const SystemEditorComponent = ({ classes }) => {
             ctaCallback={() => {
               window.location.href = "#/app-settings";
             }}
-            cta="Change room settings"
-            body="Specify the default room size and how they are accessed and created."
+            cta="更衣室设置"
+            body="指定默认房间大小以及如何访问和创建它们。"
           />
         </section>
 
@@ -152,8 +155,8 @@ const SystemEditorComponent = ({ classes }) => {
             ctaCallback={() => {
               window.open("https://hubs.mozilla.com/docs/hubs-cloud-limiting-user-access.html");
             }}
-            cta="Limit access guide"
-            body="Learn how to control who can enter your hub’s rooms."
+            cta="限制出入指南"
+            body="学习如何控制谁可以进入你的中心的房间。"
           />
         </section>
       </Card>

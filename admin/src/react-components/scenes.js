@@ -31,7 +31,7 @@ export const SceneEdit = props => (
     <SimpleForm toolbar={<ToolbarWithoutDelete />}>
       <TextInput source="name" />
       <SelectInput
-        label="Status"
+        label="状态"
         source="state"
         choices={[
           { id: "active", name: "active" },
@@ -47,14 +47,14 @@ export const SceneEdit = props => (
 export const SceneList = props => (
   <List {...props} filters={<SceneFilter />} bulkActionButtons={false}>
     <Datagrid>
-      <OwnedFileImage source="screenshot_owned_file_id" />
-      <OwnedFileSizeField label="Model size" source="model_owned_file_id" />
-      <TextField source="name" />
-      <SceneLink source="scene_sid" />
-      <BooleanField source="allow_remixing" />
-      <BooleanField source="allow_promotion" />
-      <DateField source="updated_at" />
-      <TextField label="Status" source="state" />
+      <OwnedFileImage source="screenshot_owned_file_id" label="场景示意图"/>
+      <OwnedFileSizeField label="模型大小" source="model_owned_file_id" />
+      <TextField source="name" label="名称"/>
+      <SceneLink source="scene_sid" label="场景SID"/>
+      <BooleanField source="allow_remixing" label="允许重新合成"/>
+      <BooleanField source="allow_promotion" label="允许优化"/>
+      <DateField source="updated_at" label="更新时间"/>
+      <TextField label="状态" source="state" />
       <EditButton />
       <ApproveSceneButton />
     </Datagrid>
