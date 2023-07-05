@@ -39,8 +39,11 @@ features.max_room_size = { category = "rooms", type = "number", name = "Maximum 
 
 features.show_feature_panels = { category = "features", type = "boolean", internal = "true" }
 features.show_join_us_dialog = { category = "features", type = "boolean", internal = "true" }
-Expand All
-	@@ -47,7 +47,7 @@ features.show_issue_report_dialog = { category = "features", type = "boolean", i
+features.show_discord_bot_link = { category = "features", type = "boolean", internal = "true" }
+features.show_whats_new_link = { category = "features", type = "boolean", internal = "true" }
+features.show_source_link = { category = "features", type = "boolean", internal = "true" }
+features.show_feedback_ui = { category = "features", type = "boolean", internal = "true" }
+features.show_issue_report_dialog = { category = "features", type = "boolean", internal = "true" }
 features.show_cloud = { category = "features", type = "boolean", internal = "true" }
 features.show_newsletter_signup = { category = "features", type = "boolean", internal = "true" }
 features.change_hub_near_room_links = { category = "features", type = "boolean", internal = "true" }
