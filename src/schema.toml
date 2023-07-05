@@ -1,12 +1,12 @@
 # App config schema
 
-translations.en."app-name" = { category = "translations", type = "string", name = "App Name", description = "整个应用程序使用的名称。" }
-translations.en."app-description" = { category = "translations", type = "string", name = "App Description", description = "App description used across the app." }
-translations.en."app-tagline" = { category = "translations", type = "string", name = "App Tagline", description = "A shorter app description used across the app." }
-translations.en."company-name" = { category = "translations", type = "string", name = "Company Name", description = "Company name used across the app." }
-translations.en."share-hashtag" = { category = "translations", type = "string", name = "Share Hashtag", description = "Hashtag used in share messages." }
-translations.en."contact-email" = { category = "translations", type = "string", name = "Contact email", description = "General contact email." }
-translations.en."settings.community" = { category = "translations", type = "string", name = "Community Prompt", description = "Prompt for joining your community." }
+translations.en."app-name" = { category = "translations", type = "string", name = "应用程序名称", description = "整个应用程序使用的名称。" }
+translations.en."app-description" = { category = "translations", type = "string", name = "应用程序描述", description = "应用描述在整个应用中使用。" }
+translations.en."app-tagline" = { category = "translations", type = "string", name = "应用标语", description = "更短的应用描述在整个应用中使用。" }
+translations.en."company-name" = { category = "translations", type = "string", name = "公司名称", description = "整个应用程序使用的公司名称。" }
+translations.en."share-hashtag" = { category = "translations", type = "string", name = "分享标签", description = "在分享消息时使用的标签。" }
+translations.en."contact-email" = { category = "translations", type = "string", name = "联系电子邮件", description = "一般联系邮箱。" }
+translations.en."settings.community" = { category = "translations", type = "string", name = "社区提示", description = "提示加入您的社区。" }
 
 translations.en."app-full-name" = { category = "translations", type = "string", internal = "true" }
 translations.en."app-twitter-user" = { category = "translations", type = "string", internal = "true" }
