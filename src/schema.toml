@@ -31,11 +31,11 @@ features.enable_spoke = { category = "features", type = "boolean", name = "启�
 features.enable_lobby_ghosts = { category = "features", type = "boolean", name = "启用大堂幽灵", description = "让大堂的人探索房间，同时保持隐形和听不见。" }
 features.public_api_access = { category = "features", type = "boolean", name = "访问公共API", description = "启用可公开访问的API，以编程方式管理后端资源。", internal = "false" }
 
-features.permissive_rooms = { category = "rooms", type = "boolean", name = "Permissive Rooms", description = "Enable full content creation permissions on new rooms." }
-features.disable_room_creation = { category = "rooms", type = "boolean", name = "Disable room creation", description = "Disable creating rooms for non-administrators." }
-features.require_account_for_join = { category = "rooms", type = "boolean", name = "Require accounts for room access", description = "Require accounts for accessing rooms." }
-features.default_room_size = { category = "rooms", type = "number", name = "Default room size", description = "Default room size for new rooms. This does not include users in the lobby." }
-features.max_room_size = { category = "rooms", type = "number", name = "Maximum room size", description = "Maximum room size visitors can set." }
+features.permissive_rooms = { category = "rooms", type = "boolean", name = "宽容的房间", description = "启用新房间的完全内容创建权限。" }
+features.disable_room_creation = { category = "rooms", type = "boolean", name = "禁止创建房间", description = "禁止为非管理员创建房间。" }
+features.require_account_for_join = { category = "rooms", type = "boolean", name = "需要进入房间的帐号", description = "需要访问房间的帐号。" }
+features.default_room_size = { category = "rooms", type = "number", name = "默认房间大小", description = "新房间的默认房间大小。这并不包括大厅的用户。" }
+features.max_room_size = { category = "rooms", type = "number", name = "最大房间面积", description = "访客可设定的最大房间尺寸。" }
 
 features.show_feature_panels = { category = "features", type = "boolean", internal = "true" }
 features.show_join_us_dialog = { category = "features", type = "boolean", internal = "true" }
@@ -76,16 +76,16 @@ theme.nametag-color = { category = "theme", type = "color", name = "Background C
 theme.nametag-text-color = { category = "theme", type = "color", name = "Text Color", description="The text color of nametags which float above each room guest." }
 theme.themes = { category = "theme", type = "json", name = "Themes", description = "A json array describing custom client themes."}
 
-links.terms_of_use = { category = "links", type = "string", name = "Terms of Use", description = "Link to your terms of use page."}
-links.privacy_notice = { category = "links", type = "string", name = "Privacy Notice", description = "Link to your privacy page."}
-links.controls = { category = "links", type = "string", name = "Controls Documentation", description = "Link to controls documentation."}
-links.features = { category = "links", type = "string", name = "Features Documentation", description = "Link to features documentation."}
-links.community = { category = "links", type = "string", name = "Community", description = "Link to your community."}
-links.docs = { category = "links", type = "string", name = "Docs", description = "Link to your documentation."}
-links.issue_report = { category = "links", type = "string", name = "Issue Report", description = "Link for reporting issues."}
-links.promotion = { category = "links", type = "string", name = "Promotion Info", description = "Link to info about promotion info and licensing."}
-links.remixing = { category = "links", type = "string", name = "Remixing Info", description = "Link to info about remixing info and licensing."}
-links.model_collection = { category = "links", type = "string", name = "Model Collection", description = "Link to a collection of recommended models."}
+links.terms_of_use = { category = "links", type = "string", name = "使用条款", description = "使用条款链接到您的使用条款页面。"}
+links.privacy_notice = { category = "links", type = "string", name = "隐私声明", description = "链接到您的隐私页面。"}
+links.controls = { category = "links", type = "string", name = "控制文档", description = "链接到控件文档。"}
+links.features = { category = "links", type = "string", name = "功能文档", description = "链接到功能文档。"}
+links.community = { category = "links", type = "string", name = "社区", description = "链接到你的社区。"}
+links.docs = { category = "links", type = "string", name = "文献", description = "链接到您的文档。"}
+links.issue_report = { category = "links", type = "string", name = "问题报告", description = "报告问题的链接。"}
+links.promotion = { category = "links", type = "string", name = "促销信息", description = "链接到关于促销信息和许可的信息。"}
+links.remixing = { category = "links", type = "string", name = "重新合成信息", description = "链接到关于混音信息和许可的信息。"}
+links.model_collection = { category = "links", type = "string", name = "模型收藏", description = "链接到推荐模型的集合。"}
 
-auth.login_subject = { category = "auth", type="string", name="Magic Link Email Subject", description="Customize the email subject line for users logging in" }
-auth.login_body = { category = "auth", type="longstring", name="Magic Link Email Body", description="Customize message. Add '{{ link }}' to insert the magic link, otherwise it will be appended at the end." }
+auth.login_subject = { category = "auth", type="string", name="神奇链接邮件主题", description="自定义登录用户的邮件主题" }
+auth.login_body = { category = "auth", type="longstring", name="神奇链接邮件正文", description="自定义消息。添加` {{link}} `来插入魔法链接，否则它将被添加到末尾。" }
