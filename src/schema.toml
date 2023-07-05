@@ -12,24 +12,24 @@ translations.en."app-full-name" = { category = "translations", type = "string", 
 translations.en."app-twitter-user" = { category = "translations", type = "string", internal = "true" }
 translations.en."editor-name" = { category = "translations", type = "string", internal = "true" }
 
-features.disable_sign_up = { category = "features", type = "boolean", name = "Disable account creation", description = "Prevent visitors from creating accounts. Accounts must be created by an administrator." }
-features.show_terms = { category = "features", type = "boolean", name = "Show Terms of Use", description = "Show links to the terms of use." }
-features.show_privacy = { category = "features", type = "boolean", name = "Show Privacy Notice", description = "Show links to the privacy notice." }
-features.show_controls_link = { category = "features", type = "boolean", name = "Show Controls Links", description = "Show links to controls documentation." }
-features.show_docs_link = { category = "features", type = "boolean", name = "Show Docs Links", description = "Show links to documentation." }
-features.show_features_link = { category = "features", type = "boolean", name = "Show Features Links", description = "Show links to features documentation." }
-features.show_community_link = { category = "features", type = "boolean", name = "Show Community Links", description = "Show links to your community." }
-features.show_company_logo = { category = "features", type = "boolean", name = "Show Company Logo", description = "Show the company logo across the app." }
-features.show_issue_report_link = { category = "features", type = "boolean", name = "Show Issue Report Link", description = "Show a link for reporting issues." }
-features.show_avatar_editor_link = { category = "features", type = "boolean", name = "Show Avatar Editor Links", description = "Show links to avatar editors like Quilt.", internal = "true" }
-features.show_avatar_pipelines_link = { category = "features", type = "boolean", name = "Show Avatar Pipelines Links", description = "Show links to avatar pipeline info." }
-features.show_model_collection_link = { category = "features", type = "boolean", name = "Show Model Collection Link", description = "Show link to a collection of models." }
-features.hide_powered_by = { category = "features", type = "boolean", name = "Hide Powered By Hubs", description = "Hides the 'Powered by Hubs Cloud' notice on the home page and loading screens." }
-features.public_rooms = { category = "features", type = "boolean", name = "Public Rooms", description = "Allow visitors to set rooms to public to feature them on the homepage." }
-features.default_room_id = { category = "features", type = "string", name = "Homepage Room ID", description = "Use the specified room in place of the homepage."}
-features.enable_spoke = { category = "features", type = "boolean", name = "Enable Scene Editor", description = "Enable Scene Editor for all visitors."}
-features.enable_lobby_ghosts = { category = "features", type = "boolean", name = "Enable Lobby Ghosts", description = "Allow people in the lobby to explore the room while remaining invisible and inaudible." }
-features.public_api_access = { category = "features", type = "boolean", name = "Public API Access", description = "Enables a publicly-accessible API for managing backend resources programmatically.", internal = "false" }
+features.disable_sign_up = { category = "features", type = "boolean", name = "禁止创建帐户", description = "阻止访问者创建帐户。帐户必须由管理员创建。" }
+features.show_terms = { category = "features", type = "boolean", name = "显示使用条款", description = "显示使用条款的链接。" }
+features.show_privacy = { category = "features", type = "boolean", name = "显示隐私通知", description = "显示隐私通知的链接。" }
+features.show_controls_link = { category = "features", type = "boolean", name = "显示控件", description = "显示指向控件文档的链接。" }
+features.show_docs_link = { category = "features", type = "boolean", name = "显示文档链接", description = "显示到文档的链接。" }
+features.show_features_link = { category = "features", type = "boolean", name = "显示功能链接", description = "显示功能文档的链接。" }
+features.show_community_link = { category = "features", type = "boolean", name = "显示社区链接", description = "显示与你的社区的链接。" }
+features.show_company_logo = { category = "features", type = "boolean", name = "展示公司标志", description = "在整个应用程序中显示公司的logo。" }
+features.show_issue_report_link = { category = "features", type = "boolean", name = "显示问题报告链接", description = "显示用于报告问题的链接。" }
+features.show_avatar_editor_link = { category = "features", type = "boolean", name = "显示头像编辑器链接", description = "显示头像编辑器的链接，如Quilt。", internal = "true" }
+features.show_avatar_pipelines_link = { category = "features", type = "boolean", name = "显示头像管道", description = "显示指向avatar管道信息的链接。" }
+features.show_model_collection_link = { category = "features", type = "boolean", name = "显示模型集合Link", description = "显示到模型集合的链接。" }
+features.hide_powered_by = { category = "features", type = "boolean", name = "皮革由集线器供电", description = "隐藏首页和加载页面上的“Powered by Hubs Cloud”通知。" }
+features.public_rooms = { category = "features", type = "boolean", name = "公共房间", description = "允许访客将房间设置为公共空间，以在主页上展示它们。" }
+features.default_room_id = { category = "features", type = "string", name = "主页室号", description = "使用指定的房间来代替主页。"}
+features.enable_spoke = { category = "features", type = "boolean", name = "启用场景编辑器", description = "为所有访问者启用场景编辑器。"}
+features.enable_lobby_ghosts = { category = "features", type = "boolean", name = "启用大堂幽灵", description = "让大堂的人探索房间，同时保持隐形和听不见。" }
+features.public_api_access = { category = "features", type = "boolean", name = "访问公共API", description = "启用可公开访问的API，以编程方式管理后端资源。", internal = "false" }
 
 features.permissive_rooms = { category = "rooms", type = "boolean", name = "Permissive Rooms", description = "Enable full content creation permissions on new rooms." }
 features.disable_room_creation = { category = "rooms", type = "boolean", name = "Disable room creation", description = "Disable creating rooms for non-administrators." }
